@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101a35">
+<meta name="description" content="Beulynk connects people, communities, and trusted support through dignity, transparency, and human connection.">
+<title>Beulynk — Unity through connection</title>
+<style>
+:root{--navy:#101a35;--navy2:#172747;--ink:#18233c;--muted:#66718a;--green:#00d68f;--mint:#dffaf0;--coral:#f05b69;--paper:#f7f9fc;--white:#fff;--line:#e7ebf2;--shadow:0 22px 70px rgba(16,26,53,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.91);backdrop-filter:blur(14px);border-bottom:1px solid rgba(231,235,242,.85)}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;font-weight:850;letter-spacing:.15em;font-size:1.25rem;color:var(--navy)}.brand-mark{width:38px;height:38px;display:grid;place-items:center;background:var(--navy);border-radius:13px;color:white}.brand-mark svg{width:23px;height:23px}.navlinks{display:flex;align-items:center;gap:30px;color:#58637b;font-size:.94rem}.navlinks a:hover{color:var(--navy)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 20px;border-radius:12px;background:var(--green);color:#06271d;font-weight:800;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px #00d68f35}.btn.dark{background:var(--navy);color:white}.btn.ghost{background:#fff;border:1px solid var(--line);color:var(--navy)}.menu{display:none;background:none;border:0;font-size:1.7rem;color:var(--navy)}
+.hero{overflow:hidden;position:relative;background:radial-gradient(circle at 80% 25%,#273d68 0,transparent 32%),linear-gradient(135deg,#101a35,#142746 72%,#183a50);color:white;padding:84px 0 88px}.hero:before{content:"";position:absolute;width:430px;height:430px;border:1px solid #ffffff12;border-radius:50%;right:-90px;bottom:-250px;box-shadow:0 0 0 50px #ffffff05,0 0 0 100px #ffffff04}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:64px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#aaf5d8;background:#ffffff0d;border:1px solid #ffffff22;border-radius:99px;padding:7px 13px;font-size:.82rem;font-weight:700;letter-spacing:.04em}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #00d68f20}.hero h1{font-size:clamp(2.65rem,5.1vw,4.65rem);line-height:1.05;letter-spacing:-.055em;margin:24px 0 22px;max-width:680px}.hero h1 em{font-style:normal;color:var(--green)}.hero p{font-size:1.12rem;color:#c4cee0;max-width:560px;margin:0 0 30px}.actions{display:flex;gap:13px;flex-wrap:wrap}.hero .ghost{background:#ffffff0b;border-color:#ffffff35;color:white}.trustline{display:flex;align-items:center;gap:12px;margin-top:28px;color:#b7c4d8;font-size:.88rem}.trustline strong{color:#fff}.hero-visual{position:relative}.brand-card{max-width:470px;margin-left:auto;background:#fff;border:1px solid #ffffff70;border-radius:28px;padding:14px;box-shadow:0 30px 90px #0005;transform:rotate(1deg)}.brand-card img{width:100%;display:block;border-radius:18px}.float-note{position:absolute;left:-30px;bottom:28px;background:white;color:var(--ink);border-radius:16px;padding:15px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;max-width:230px;transform:rotate(-2deg)}.float-icon{width:42px;height:42px;border-radius:13px;background:var(--mint);display:grid;place-items:center;font-size:1.35rem}.float-note strong{display:block;font-size:.92rem}.float-note small{color:var(--muted)}
+.stats{padding:25px 0;border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.stat{display:flex;align-items:center;justify-content:center;gap:12px;text-align:left}.stat-icon{width:44px;height:44px;border-radius:14px;background:#effaf6;display:grid;place-items:center;color:#00895b;font-size:1.2rem}.stat b{display:block;font-size:.98rem}.stat span{color:var(--muted);font-size:.83rem}
+section{padding:88px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 44px}.kicker{color:#008b61;font-weight:850;text-transform:uppercase;letter-spacing:.14em;font-size:.77rem}.section-head h2{font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-.04em;line-height:1.12;margin:13px 0 15px;color:var(--navy)}.section-head p{color:var(--muted);font-size:1.05rem;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{padding:28px;border:1px solid var(--line);border-radius:20px;background:#fff;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.card-icon{height:52px;width:52px;border-radius:16px;display:grid;place-items:center;background:var(--mint);font-size:1.5rem;margin-bottom:20px}.card:nth-child(2) .card-icon{background:#fff0f1}.card:nth-child(3) .card-icon{background:#edf2ff}.card h3{margin:0 0 10px;font-size:1.18rem;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.mission{background:var(--paper)}.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.mission-art{min-height:370px;border-radius:28px;background:linear-gradient(140deg,#dffaf0,#e9efff);display:grid;place-items:center;position:relative;overflow:hidden}.mission-art:before,.mission-art:after{content:"";position:absolute;border:1px solid #17325517;border-radius:50%;width:270px;height:270px}.mission-art:after{width:360px;height:360px}.big-heart{z-index:1;width:190px;height:190px;border-radius:55px;background:var(--navy);display:grid;place-items:center;box-shadow:0 24px 60px #101a3533;transform:rotate(-5deg)}.big-heart svg{width:105px;height:105px;fill:var(--green)}.mission-copy h2{font-size:clamp(2rem,3.4vw,2.8rem);letter-spacing:-.04em;line-height:1.15;color:var(--navy);margin:13px 0 18px}.mission-copy>p{color:var(--muted)}.values{display:grid;gap:13px;margin-top:24px}.value{display:flex;gap:12px;align-items:flex-start}.check{flex:0 0 24px;height:24px;border-radius:50%;background:var(--mint);color:#00784f;display:grid;place-items:center;font-weight:900}.value strong{display:block;color:var(--navy)}.value span{font-size:.9rem;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}.step{position:relative;padding:26px 24px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}.step:before{counter-increment:step;content:"0" counter(step);font-size:2.3rem;font-weight:900;color:#00a96f;letter-spacing:-.06em}.step h3{margin:8px 0;color:var(--navy)}.step p{margin:0;color:var(--muted);font-size:.94rem}
+.cta{padding:0 0 88px}.cta-panel{background:linear-gradient(120deg,#101a35,#1b3556);color:#fff;border-radius:28px;padding:52px 58px;display:flex;justify-content:space-between;align-items:center;gap:30px;position:relative;overflow:hidden}.cta-panel:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff15;border-radius:50%;right:25%;top:-160px;box-shadow:0 0 0 35px #ffffff05,0 0 0 70px #ffffff04}.cta-panel>div,.cta-panel>a{position:relative;z-index:1}.cta-panel h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;letter-spacing:-.04em;margin:0 0 12px}.cta-panel p{color:#c4cee0;margin:0;max-width:590px}
+footer{background:#0b1328;color:#fff;padding:45px 0 24px}.footer-top{display:flex;justify-content:space-between;gap:30px;padding-bottom:35px}.footer-brand p{color:#a8b4c9;max-width:330px;font-size:.92rem}.footer-links{display:flex;gap:60px}.footer-links h4{margin:0 0 12px}.footer-links a{display:block;color:#a8b4c9;font-size:.9rem;margin:7px 0}.footer-links a:hover{color:var(--green)}.copyright{border-top:1px solid #ffffff17;padding-top:20px;display:flex;justify-content:space-between;gap:15px;color:#8491a8;font-size:.82rem}.copyright span:last-child{color:#a8b4c9}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:45px}.hero{padding:65px 0}.hero-visual{max-width:530px;width:100%;margin:auto}.brand-card{margin:auto}.float-note{left:-8px}.mission-grid{grid-template-columns:1fr;gap:35px}.mission-art{min-height:300px}.cards,.steps{grid-template-columns:1fr 1fr}.navlinks{gap:17px}.navlinks a:not(.btn){display:none}}
+@media(max-width:560px){.wrap{width:min(100% - 30px,1160px)}.nav{height:68px}.brand{font-size:1.1rem}.navlinks .btn{padding:10px 13px;font-size:.84rem}.hero h1{font-size:2.75rem}.hero p{font-size:1rem}.stats-grid{grid-template-columns:1fr;gap:16px}.stat{justify-content:flex-start}.cards,.steps{grid-template-columns:1fr}.section-head{text-align:left;margin-bottom:30px}section{padding:65px 0}.cta-panel{padding:32px 25px;align-items:flex-start;flex-direction:column}.footer-top{flex-direction:column}.footer-links{gap:40px}.copyright{flex-direction:column}.float-note{left:-5px;bottom:15px;padding:11px 12px}.float-note small{font-size:.75rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Beulynk home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-8.7-5.2-8.7-12A4.8 4.8 0 0 1 12 6.3 4.8 4.8 0 0 1 20.7 9C20.7 15.8 12 21 12 21Z"/></svg></span>
+      BEULYNK
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#about">Our mission</a><a href="#how">How it works</a><a href="#values">Our values</a>
+      <a class="btn" href="#connect">Get involved <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> People first. Always.</div>
+      <h1>Humanity moves forward <em>together.</em></h1>
+      <p>Beulynk brings people, communities, and trusted support closer together—because a little connection can open the door to lasting change.</p>
+      <div class="actions"><a class="btn" href="#connect">Be part of the change <span aria-hidden="true">→</span></a><a class="btn ghost" href="#about">Discover our mission</a></div>
+      <div class="trustline"><span class="dot"></span><span><strong>Unity through connection</strong> — dignity, trust, and shared hope.</span></div>
+    </div>
+    <div class="hero-visual">
+      <div class="brand-card"><img src="assets/beulynk-brand.jpg" alt="Beulynk logo with a white heart and the words Unity through connection"></div>
+      <div class="float-note"><div class="float-icon">♡</div><div><strong>Connection creates hope</strong><small>Every person deserves dignity.</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats"><div class="wrap stats-grid">
+  <div class="stat"><div class="stat-icon">♡</div><div><b>Dignity first</b><span>People are more than their needs.</span></div></div>
+  <div class="stat"><div class="stat-icon">⌁</div><div><b>Trust through clarity</b><span>Make support easier to understand.</span></div></div>
+  <div class="stat"><div class="stat-icon">✳</div><div><b>Community powered</b><span>Progress is something we build together.</span></div></div>
+</div></div>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">Why Beulynk</div><h2>Connection is where change begins.</h2><p>Good intentions matter. Connecting them to real people, clear needs, and responsible action can make them matter even more.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">🤝</div><h3>Bring people closer</h3><p>Create a bridge between people who want to help and communities seeking support, built on respect and understanding.</p></article>
+      <article class="card"><div class="card-icon">🧭</div><h3>Make support clearer</h3><p>Encourage responsible, transparent ways to understand needs and coordinate help without losing sight of the person.</p></article>
+      <article class="card"><div class="card-icon">🌱</div><h3>Protect human dignity</h3><p>Put privacy, consent, fairness, and the voices of individuals and families at the centre of every interaction.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="mission" id="values">
+  <div class="wrap mission-grid">
+    <div class="mission-art" aria-label="Illustration of a heart representing care and connection"><div class="big-heart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-9-5.6-9-12A5 5 0 0 1 12 6a5 5 0 0 1 9 3c0 6.4-9 12-9 12Z"/></svg></div></div>
+    <div class="mission-copy"><div class="kicker">What guides us</div><h2>Care with compassion. Act with integrity.</h2><p>We believe support should empower people—not define them. Our approach is grounded in the simple idea that meaningful progress starts by listening and continues through responsible action.</p>
+      <div class="values">
+        <div class="value"><span class="check">✓</span><div><strong>Dignity and respect</strong><span>Every person deserves to be heard without judgement.</span></div></div>
+        <div class="value"><span class="check">✓</span><div><strong>Transparency and trust</strong><span>Be clear about what is known, what is needed, and what happens next.</span></div></div>
+        <div class="value"><span class="check">✓</span><div><strong>Community and inclusion</strong><span>Build connections that welcome people and strengthen local action.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">A simple idea</div><h2>From understanding to action.</h2><p>Lasting support begins with listening, grows through collaboration, and succeeds when people are treated with dignity.</p></div>
+    <div class="steps">
+      <article class="step"><h3>Listen first</h3><p>Understand people's circumstances and priorities before deciding what support should look like.</p></article>
+      <article class="step"><h3>Connect thoughtfully</h3><p>Bring willing supporters, community partners, and people with needs into a clearer conversation.</p></article>
+      <article class="step"><h3>Follow through</h3><p>Encourage accountable action, communicate honestly, and keep people's dignity at the heart of the process.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="connect">
+  <div class="wrap"><div class="cta-panel"><div><h2>Let’s make connection count.</h2><p>Whether you are a community member, volunteer, organisation, or supporter, a more connected world starts with people choosing to care.</p></div><a class="btn" href="mailto:hello@beulynk.org?subject=Connecting%20with%20Beulynk">Connect with Beulynk <span aria-hidden="true">→</span></a></div></div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand" href="#home" style="color:#fff"><span class="brand-mark" style="background:#00d68f;color:#10213a"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-8.7-5.2-8.7-12A4.8 4.8 0 0 1 12 6.3 4.8 4.8 0 0 1 20.7 9C20.7 15.8 12 21 12 21Z"/></svg></span>BEULYNK</a><p>Unity through connection. Bringing people closer to trusted support and shared hope.</p></div>
+      <div class="footer-links"><div><h4>Explore</h4><a href="#about">Our mission</a><a href="#how">How it works</a><a href="#values">Our values</a></div><div><h4>Get involved</h4><a href="#connect">Partner with us</a><a href="mailto:hello@beulynk.org">Contact</a></div></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> Beulynk. All rights reserved.</span><span>Unity through connection · Built around human dignity</span></div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
